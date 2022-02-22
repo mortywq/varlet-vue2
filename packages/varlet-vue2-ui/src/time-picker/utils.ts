@@ -3,15 +3,15 @@ import type { AmPm, AllowedTime } from './props'
 import { toNumber } from '../utils/shared'
 
 type DisableProps = {
-  time: number;
-  format: string;
-  ampm: AmPm | undefined;
-  hour: string;
-  minute: number;
-  max: string | undefined;
-  min: string | undefined;
-  disableHour: Array<string>;
-  allowedTime: AllowedTime | undefined;
+  time: number
+  format: string
+  ampm: AmPm | undefined
+  hour: string
+  minute: number
+  max: string | undefined
+  min: string | undefined
+  disableHour: Array<string>
+  allowedTime: AllowedTime | undefined
 }
 
 export const notConvert = (format: string, ampm: AmPm | undefined): boolean => format === '24hr' || ampm === 'am'
